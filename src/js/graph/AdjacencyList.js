@@ -4,7 +4,7 @@ dijkstra.graph.AdjacencyList = function () {
 
     var that = {};
 
-    var adjacencyList = {};
+    var adjacencyMap = {};
 
     that.addEdges = function (parentNode, childNodes) {
         var numChildren = childNodes.length,
@@ -14,24 +14,35 @@ dijkstra.graph.AdjacencyList = function () {
                 that.addEdge(parentNode, childNodes[i]);
             }
         } else {
-            adjacencyList[parentNode] = [];
+            adjacencyMap[parentNode] = [];
         }
     };
 
     that.addEdge = function (parentNode, childNode) {
-        if (adjacencyList[parentNode]) {
-            adjacencyList[parentNode].push(childNode);
+        if (adjacencyMap[parentNode]) {
+            adjacencyMap[parentNode].push(childNode);
         } else {
-            adjacencyList[parentNode] = [childNode];
+            adjacencyMap[parentNode] = [childNode];
         }
     };
 
     that.getChildren = function (node) {
-        return adjacencyList[node] || [];
+        return adjacencyMap[node] || [];
     };
 
-    that.getAdjacencyList = function () {
-        return adjacencyList;
+    that.getAdjacencyMap = function () {
+        return adjacencyMap;
+    };
+
+    that.getNodeList = function () {
+        var node,
+            nodeList = [];
+        for (node in adjacencyMap) {
+            if (adjacencyMap.hasOwnProperty(node)) {
+                nodeList.push(node);
+            }
+        }
+        return nodeList;
     };
 
     return that;

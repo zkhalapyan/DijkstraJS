@@ -11,7 +11,7 @@ dijkstra.graph.AdjacencyList = function () {
 
     var that = {};
 
-    var adjacencyList = {};
+    var adjacencyMap = {};
 
     that.addEdges = function (parentNode, childNodes) {
         var numChildren = childNodes.length,
@@ -21,24 +21,35 @@ dijkstra.graph.AdjacencyList = function () {
                 that.addEdge(parentNode, childNodes[i]);
             }
         } else {
-            adjacencyList[parentNode] = [];
+            adjacencyMap[parentNode] = [];
         }
     };
 
     that.addEdge = function (parentNode, childNode) {
-        if (adjacencyList[parentNode]) {
-            adjacencyList[parentNode].push(childNode);
+        if (adjacencyMap[parentNode]) {
+            adjacencyMap[parentNode].push(childNode);
         } else {
-            adjacencyList[parentNode] = [childNode];
+            adjacencyMap[parentNode] = [childNode];
         }
     };
 
     that.getChildren = function (node) {
-        return adjacencyList[node] || [];
+        return adjacencyMap[node] || [];
     };
 
-    that.getAdjacencyList = function () {
-        return adjacencyList;
+    that.getAdjacencyMap = function () {
+        return adjacencyMap;
+    };
+
+    that.getNodeList = function () {
+        var node,
+            nodeList = [];
+        for (node in adjacencyMap) {
+            if (adjacencyMap.hasOwnProperty(node)) {
+                nodeList.push(node);
+            }
+        }
+        return nodeList;
     };
 
     return that;
@@ -209,22 +220,45 @@ dijkstra.search.ShortestPath = (function () {
 
     that.findShortestPathWithBFS = function (rootNode, adjacencyList, callback) {
         var distance = { },
-            parent = { },
+            parentMap = { },
             currentDistance,
 
             onDoneCallback = function () {
-                callback(distance, parent);
+                callback(distance, parentMap);
             },
 
             onVisitCallback = function (parentNode, childNode) {
                 currentDistance = distance[parentNode] + 1;
                 if (!distance.hasOwnProperty(childNode) || currentDistance < distance[childNode]) {
-                    parent[childNode] = parentNode;
+                    parentMap[childNode] = parentNode;
                     distance[childNode] = currentDistance;
                 }
             };
         distance[rootNode] = 0;
         BreadthFirstSearch.searchWithAdjacencyList(rootNode, adjacencyList, onVisitCallback, onDoneCallback);
+    };
+
+    that.backtrackPath = function (srcNode, dstNode, parentMap, onNextStepCallback, onDoneCallback) {
+        var currentNode = dstNode,
+            previousNode;
+        while (true) {
+
+            //The path from destination to source is complete.
+            if (currentNode === srcNode) {
+                onDoneCallback(true);
+                break;
+
+            //There is no path from destination to source.
+            } else if (!parentMap.hasOwnProperty(currentNode)) {
+                onDoneCallback(false);
+                break;
+            }
+
+            previousNode = parentMap[currentNode];
+            onNextStepCallback(previousNode, currentNode);
+            currentNode = previousNode;
+        }
+
     };
 
     return that;
