@@ -14,9 +14,14 @@ dijkstra.graph.AdjacencyList = function () {
     var adjacencyList = {};
 
     that.addEdges = function (parentNode, childNodes) {
-        var i;
-        for (i = 0; i < childNodes.length; i += 1) {
-            that.addEdge(parentNode, childNodes[i]);
+        var numChildren = childNodes.length,
+            i;
+        if (numChildren > 0) {
+            for (i = 0; i < numChildren; i += 1) {
+                that.addEdge(parentNode, childNodes[i]);
+            }
+        } else {
+            adjacencyList[parentNode] = [];
         }
     };
 
@@ -77,13 +82,13 @@ dijkstra.parse.AdjacencyListParser = function () {
             colonSplit,
             adjacentNodes;
         fs.readFile(fileName, function (err, data) {
-            fileLines = data.toString().split(" ;");
+            fileLines = data.toString().split(";");
             numLines = fileLines.length;
             for (i = 1; i < numLines;  i += 1) {
                 fileLine = fileLines[i].trim();
                 if (fileLine.length > 0) {
                     colonSplit = fileLine.split(":  ");
-                    adjacentNodes = colonSplit[1].split(" ");
+                    adjacentNodes = (colonSplit.length === 2) ? colonSplit[1].split(" ") : [];
                     adjacencyList.addEdges(colonSplit[0], adjacentNodes);
                 }
             }
@@ -105,19 +110,41 @@ dijkstra.search.BreadthFirstSearch = (function () {
 
     var that = {};
 
-    that.searchWithAdjacencyList = function (rootNode, adjacencyList, callback) {
-        return that.search(rootNode, callback, function (node) {
+    /**
+     *
+     * @param rootNode
+     * @param adjacencyList
+     * @param visitCallback
+     * @param doneCallback
+     * @return {*}
+     */
+    that.searchWithAdjacencyList = function (rootNode, adjacencyList, visitCallback, doneCallback) {
+        return that.search(rootNode, visitCallback, doneCallback, function (node) {
             return adjacencyList.getChildren(node);
         });
     };
 
-    that.searchWithGraphNode = function (rootNode, callback) {
-        return that.search(rootNode, callback, function (node) {
+    /**
+     *
+     * @param rootNode
+     * @param visitCallback
+     * @param doneCallback
+     * @return {*}
+     */
+    that.searchWithGraphNode = function (rootNode, visitCallback, doneCallback) {
+        return that.search(rootNode, visitCallback, doneCallback, function (node) {
             return node.getChildren();
         });
     };
 
-    that.search = function (rootNode, callback, getChildrenCallback) {
+    /**
+     *
+     * @param rootNode
+     * @param visitCallback
+     * @param doneCallback
+     * @param getChildrenCallback
+     */
+    that.search = function (rootNode, visitCallback, doneCallback, getChildrenCallback) {
         var queue = [rootNode],
             currentNode,
             children,
@@ -129,12 +156,16 @@ dijkstra.search.BreadthFirstSearch = (function () {
             children = getChildrenCallback(currentNode);
             numChildren = children.length;
             for (i = 0; i < numChildren; i += 1) {
+                visitCallback(currentNode, children[i]);
                 if (!visited[children[i]]) {
-                    callback(currentNode, children[i]);
                     queue.push(children[i]);
                     visited[children[i]] = true;
                 }
             }
+        }
+
+        if (doneCallback) {
+            doneCallback();
         }
     };
 
@@ -169,3 +200,33 @@ dijkstra.search.DepthFirstSearch = (function () {
     return that;
 
 }());
+dijkstra.search.ShortestPath = (function () {
+    "use strict";
+
+    var that = {};
+
+    var BreadthFirstSearch = dijkstra.search.BreadthFirstSearch;
+
+    that.findShortestPathWithBFS = function (rootNode, adjacencyList, callback) {
+        var distance = { },
+            parent = { },
+            currentDistance,
+
+            onDoneCallback = function () {
+                callback(distance, parent);
+            },
+
+            onVisitCallback = function (parentNode, childNode) {
+                currentDistance = distance[parentNode] + 1;
+                if (!distance.hasOwnProperty(childNode) || currentDistance < distance[childNode]) {
+                    parent[childNode] = parentNode;
+                    distance[childNode] = currentDistance;
+                }
+            };
+        distance[rootNode] = 0;
+        BreadthFirstSearch.searchWithAdjacencyList(rootNode, adjacencyList, onVisitCallback, onDoneCallback);
+    };
+
+    return that;
+}());
+

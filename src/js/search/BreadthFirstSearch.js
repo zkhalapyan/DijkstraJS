@@ -4,19 +4,41 @@ dijkstra.search.BreadthFirstSearch = (function () {
 
     var that = {};
 
-    that.searchWithAdjacencyList = function (rootNode, adjacencyList, callback) {
-        return that.search(rootNode, callback, function (node) {
+    /**
+     *
+     * @param rootNode
+     * @param adjacencyList
+     * @param visitCallback
+     * @param doneCallback
+     * @return {*}
+     */
+    that.searchWithAdjacencyList = function (rootNode, adjacencyList, visitCallback, doneCallback) {
+        return that.search(rootNode, visitCallback, doneCallback, function (node) {
             return adjacencyList.getChildren(node);
         });
     };
 
-    that.searchWithGraphNode = function (rootNode, callback) {
-        return that.search(rootNode, callback, function (node) {
+    /**
+     *
+     * @param rootNode
+     * @param visitCallback
+     * @param doneCallback
+     * @return {*}
+     */
+    that.searchWithGraphNode = function (rootNode, visitCallback, doneCallback) {
+        return that.search(rootNode, visitCallback, doneCallback, function (node) {
             return node.getChildren();
         });
     };
 
-    that.search = function (rootNode, callback, getChildrenCallback) {
+    /**
+     *
+     * @param rootNode
+     * @param visitCallback
+     * @param doneCallback
+     * @param getChildrenCallback
+     */
+    that.search = function (rootNode, visitCallback, doneCallback, getChildrenCallback) {
         var queue = [rootNode],
             currentNode,
             children,
@@ -28,12 +50,16 @@ dijkstra.search.BreadthFirstSearch = (function () {
             children = getChildrenCallback(currentNode);
             numChildren = children.length;
             for (i = 0; i < numChildren; i += 1) {
+                visitCallback(currentNode, children[i]);
                 if (!visited[children[i]]) {
-                    callback(currentNode, children[i]);
                     queue.push(children[i]);
                     visited[children[i]] = true;
                 }
             }
+        }
+
+        if (doneCallback) {
+            doneCallback();
         }
     };
 
