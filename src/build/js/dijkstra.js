@@ -55,6 +55,35 @@ dijkstra.graph.AdjacencyList = function () {
     return that;
 };
 
+dijkstra.graph.AdjacencyMatrix = function (numNodes) {
+    "use strict";
+
+    var that = {};
+
+    var matrix = [];
+
+    that.addEdge = function (parentNode, childNode) {
+        matrix[parentNode][childNode] = true;
+    };
+
+    that.removeEdge = function (parentNode, childNode) {
+        matrix[parentNode][childNode] = true;
+    };
+
+     //Initialize the adjacency matrix to a disconnected graph.
+    (function () {
+        var i, j, currentRow;
+        for (i = 0; i < numNodes; i += 1) {
+            currentRow = [];
+            for (j = 0; j < numNodes; j += 1) {
+                currentRow.push(false);
+            }
+            matrix.push(currentRow);
+        }
+    }());
+
+    return that;
+};
 
 dijkstra.graph.GraphNode = function (name, value, children) {
     "use strict";
@@ -98,8 +127,8 @@ dijkstra.parse.AdjacencyListParser = function () {
             for (i = 1; i < numLines;  i += 1) {
                 fileLine = fileLines[i].trim();
                 if (fileLine.length > 0) {
-                    colonSplit = fileLine.split(":  ");
-                    adjacentNodes = (colonSplit.length === 2) ? colonSplit[1].split(" ") : [];
+                    colonSplit = fileLine.split(/[\s]*:[\s]*/);
+                    adjacentNodes = (colonSplit.length > 1 && colonSplit[1].length > 0) ? colonSplit[1].split(" ") : [];
                     adjacencyList.addEdges(colonSplit[0], adjacentNodes);
                 }
             }

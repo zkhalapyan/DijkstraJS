@@ -2,10 +2,10 @@ var dijkstra = require("./../build/js/dijkstra.js");
 
 
 
-dijkstra.parse.AdjacencyListParser().parseAdjacencyList("airtravel.graph", function (adjacencyList) {
+dijkstra.parse.AdjacencyListParser().parseAdjacencyList("disjoint.graph", function (adjacencyList) {
     "use strict";
 
-    //console.log(adjacencyList.getAdjacencyList());
+    console.log(adjacencyList.getAdjacencyMap());
 
     /*
     dijkstra.search.BreadthFirstSearch.searchWithAdjacencyList(1, adjacencyList, function (parentNode, childNode) {
@@ -19,14 +19,58 @@ dijkstra.parse.AdjacencyListParser().parseAdjacencyList("airtravel.graph", funct
     });
     */
 
+    findNumConnectedComponents(adjacencyList, function (numConnectedComponents) {
+        console.log(numConnectedComponents);
+    });
 
+    /*
     findGraphDiameter(adjacencyList, function (diameter) {
         console.log(diameter);
     });
+    */
 
     //findHubNodes(adjacencyList);
 
 });
+
+var findNumConnectedComponents = function (adjacencyList, onDoneCallback) {
+    "use strict";
+    var nodeList = adjacencyList.getNodeList(),
+        visited = {},
+        numConnectedComponent = 0,
+        startNextSearch = function () {
+            var nextSrcNode;
+            if (nodeList.length === 0) {
+                onDoneCallback(numConnectedComponent);
+            } else {
+                nextSrcNode = nodeList.shift();
+                console.log("New Source Node: " + nextSrcNode);
+                if (!visited[nextSrcNode]) {
+                    console.log("Haven't visited " + nextSrcNode);
+                    visited[nextSrcNode] = true;
+                    numConnectedComponent += 1;
+                }
+                doSearch(nextSrcNode);
+            }
+        },
+        doSearch = function (srcNode) {
+            dijkstra.search.BreadthFirstSearch.searchWithAdjacencyList(srcNode, adjacencyList, function (parentNode, childNode) {
+                console.log(parentNode + " -> " + childNode);
+                visited[childNode] = true;
+                console.log(visited);
+            }, startNextSearch);
+        },
+        numNodes = nodeList.length,
+        i;
+
+    for (i = 0; i < numNodes; i += 1) {
+        console.log(nodeList[i]);
+        visited[nodeList[i]] = false;
+    }
+
+    startNextSearch();
+
+};
 
 var findMaxDistance = function (srcNode, adjacencyList, onDoneCallback) {
     "use strict";

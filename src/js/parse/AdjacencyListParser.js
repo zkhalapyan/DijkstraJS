@@ -18,8 +18,8 @@ dijkstra.parse.AdjacencyListParser = function () {
             for (i = 1; i < numLines;  i += 1) {
                 fileLine = fileLines[i].trim();
                 if (fileLine.length > 0) {
-                    colonSplit = fileLine.split(":  ");
-                    adjacentNodes = (colonSplit.length === 2) ? colonSplit[1].split(" ") : [];
+                    colonSplit = fileLine.split(/[\s]*:[\s]*/);
+                    adjacentNodes = (colonSplit.length > 1 && colonSplit[1].length > 0) ? colonSplit[1].split(" ") : [];
                     adjacencyList.addEdges(colonSplit[0], adjacentNodes);
                 }
             }
