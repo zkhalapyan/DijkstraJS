@@ -30,6 +30,12 @@
         </jslint>
     </target>
 
+    <target name = "test">
+        <exec dir = "test" executable = "node" failonerror = "true">
+            <arg value = "run-tests.js"/>
+        </exec>
+    </target>
+
     <target name = "concat">
         <echo message = "Combining package files..."></echo>
         <concat destfile = "${build.js}" encoding = "UTF-8" fixlastline = "true" >

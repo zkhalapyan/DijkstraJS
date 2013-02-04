@@ -2,164 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2d4731-faac-44c8-96d7-665a860dcb4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/sat/dead.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/sat/test_circuit0.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSFunction.Builder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/index-all.html" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\build\js\dijkstra.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\graph\AdjacencyList.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\graph\AdjacencyMatrix.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\graph\GraphNode.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\package.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\parse\AdjacencyListParser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\search\BreadthFirstSearch.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\search\DepthFirstSearch.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\js\search\ShortestPath.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\lib\jquery\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\lib\jshamcrest\jshamcrest-0.5.2.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\lib\jsmockito\jsmockito-1.0.4.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\lib\qunit\css\qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\lib\qunit\js\qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSFunction.Builder.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\index-all.html" afterPath="" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\test\airtravel.graph" afterPath="$PROJECT_DIR$/demo/airtravel/airtravel.graph" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\test\disjoint.graph" afterPath="$PROJECT_DIR$/demo/airtravel/disjoint.graph" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\test\small.graph" afterPath="$PROJECT_DIR$/demo/airtravel/small.graph" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\test\test.js" afterPath="$PROJECT_DIR$/demo/airtravel/test.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\closure\COPYING" afterPath="$PROJECT_DIR$/tools/closure/COPYING" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\closure\README" afterPath="$PROJECT_DIR$/tools/closure/README" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\closure\compiler.jar" afterPath="$PROJECT_DIR$/tools/closure/compiler.jar" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\LICENCE.txt" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/LICENCE.txt" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\NEWS.markdown" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/NEWS.markdown" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\README.markdown" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/README.markdown" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\ant.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/ant.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\allclasses-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/allclasses-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\allclasses-noframe.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/allclasses-noframe.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\Issue.IssueBuilder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/Issue.IssueBuilder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\Issue.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/Issue.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSFunction.Builder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSFunction.Builder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSFunction.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSFunction.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSIdentifier.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSIdentifier.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSLint.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSLint.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSLintBuilder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSLintBuilder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSLintResult.ResultBuilder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSLintResult.ResultBuilder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\JSLintResult.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/JSLintResult.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\NeedsContext.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/NeedsContext.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\Option.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/Option.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\StringArray.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/StringArray.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\TimeLimitedContextFactory.TimeExceededException.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/TimeLimitedContextFactory.TimeExceededException.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\TimeLimitedContextFactory.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/TimeLimitedContextFactory.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\UnicodeBomInputStream.BOM.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/UnicodeBomInputStream.BOM.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\UnicodeBomInputStream.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/UnicodeBomInputStream.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\VariableWarning.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/VariableWarning.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\CheckstyleXmlResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/CheckstyleXmlResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\FormatterElement.Type.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/FormatterElement.Type.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\FormatterElement.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/FormatterElement.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\JSLintTask.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/JSLintTask.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\JUnitXmlResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/JUnitXmlResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\PlainResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/PlainResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\PredefElement.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/PredefElement.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\ReportResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/ReportResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\ResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/ResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\XmlResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/XmlResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\CheckstyleXmlResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/CheckstyleXmlResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\FormatterElement.Type.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/FormatterElement.Type.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\FormatterElement.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/FormatterElement.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\JSLintTask.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/JSLintTask.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\JUnitXmlResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/JUnitXmlResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\PlainResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/PlainResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\PredefElement.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/PredefElement.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\ReportResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/ReportResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\ResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/ResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\class-use\XmlResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/class-use/XmlResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\package-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/package-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\package-summary.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/package-summary.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\package-tree.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/package-tree.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\ant\package-use.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/ant/package-use.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\Issue.IssueBuilder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/Issue.IssueBuilder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\Issue.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/Issue.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSFunction.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSFunction.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSIdentifier.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSIdentifier.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSLint.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSLint.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSLintBuilder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSLintBuilder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSLintResult.ResultBuilder.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSLintResult.ResultBuilder.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\JSLintResult.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/JSLintResult.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\NeedsContext.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/NeedsContext.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\Option.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/Option.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\StringArray.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/StringArray.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\TimeLimitedContextFactory.TimeExceededException.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/TimeLimitedContextFactory.TimeExceededException.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\TimeLimitedContextFactory.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/TimeLimitedContextFactory.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\UnicodeBomInputStream.BOM.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/UnicodeBomInputStream.BOM.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\UnicodeBomInputStream.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/UnicodeBomInputStream.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\class-use\VariableWarning.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/class-use/VariableWarning.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\cli\CharsetConverter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/cli/CharsetConverter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\cli\class-use\CharsetConverter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/cli/class-use/CharsetConverter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\cli\package-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/cli/package-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\cli\package-summary.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/cli/package-summary.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\cli\package-tree.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/cli/package-tree.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\cli\package-use.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/cli/package-use.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\CheckstyleXmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/CheckstyleXmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\JSLintResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/JSLintResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\JSLintXmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/JSLintXmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\JUnitXmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/JUnitXmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\PlainFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/PlainFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\ReportFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/ReportFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\XmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/XmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\CheckstyleXmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/CheckstyleXmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\JSLintResultFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/JSLintResultFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\JSLintXmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/JSLintXmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\JUnitXmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/JUnitXmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\PlainFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/PlainFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\ReportFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/ReportFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\class-use\XmlFormatter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/class-use/XmlFormatter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\package-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/package-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\package-summary.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/package-summary.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\package-tree.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/package-tree.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\formatter\package-use.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/formatter/package-use.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\FileLister.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/FileLister.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\HelpMojo.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/HelpMojo.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\JSLintMojo.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/JSLintMojo.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\MultiReportWriter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/MultiReportWriter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\ReportWriter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/ReportWriter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\ReportWriterImpl.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/ReportWriterImpl.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\class-use\FileLister.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/class-use/FileLister.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\class-use\HelpMojo.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/class-use/HelpMojo.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\class-use\JSLintMojo.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/class-use/JSLintMojo.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\class-use\MultiReportWriter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/class-use/MultiReportWriter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\class-use\ReportWriter.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/class-use/ReportWriter.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\class-use\ReportWriterImpl.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/class-use/ReportWriterImpl.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\package-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/package-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\package-summary.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/package-summary.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\package-tree.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/package-tree.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\maven\package-use.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/maven/package-use.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\package-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/package-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\package-summary.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/package-summary.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\package-tree.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/package-tree.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\com\googlecode\jslint4java\package-use.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/com/googlecode/jslint4java/package-use.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\constant-values.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/constant-values.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\deprecated-list.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/deprecated-list.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\help-doc.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/help-doc.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\index.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/index.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\overview-frame.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/overview-frame.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\overview-summary.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/overview-summary.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\overview-tree.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/overview-tree.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\package-list" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/package-list" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\resources\background.gif" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/resources/background.gif" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\resources\tab.gif" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/resources/tab.gif" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\resources\titlebar.gif" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/resources/titlebar.gif" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\resources\titlebar_end.gif" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/resources/titlebar_end.gif" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\serialized-form.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/serialized-form.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\apidocs\stylesheet.css" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/apidocs/stylesheet.css" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\cli.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/cli.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\index.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/index.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\jslint4java.css" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/jslint4java.css" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\maven.html" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/maven.html" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\prettify.css" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/prettify.css" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\docs\prettify.js" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/docs/prettify.js" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\DijkstraJS\src\tools\jslint4java-2.0.3\jslint4java-2.0.3.jar" afterPath="$PROJECT_DIR$/tools/jslint4java-2.0.3/jslint4java-2.0.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Zorayr_Khalapyan.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/graph/test0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/run-tests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
     </list>
     <ignored path="DijkstraJS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,7 +25,35 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="run-tests.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/run-tests.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="15" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test0.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/js/graph/test0.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="309" selection-end="309" vertical-scroll-proportion="0.3235725">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -191,11 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/js/graph/AdjacencyList.js" />
-        <option value="$PROJECT_DIR$/src/js/graph/AdjacencyMatrix.js" />
-        <option value="$PROJECT_DIR$/src/test/small.graph" />
-        <option value="$PROJECT_DIR$/src/test/disjoint.graph" />
-        <option value="$PROJECT_DIR$/src/js/parse/2SATParser.js" />
         <option value="$PROJECT_DIR$/src/js/search/BreadthFirstSearch.js" />
         <option value="$PROJECT_DIR$/src/js/search/ShortestPath.js" />
         <option value="$PROJECT_DIR$/src/js/package.js" />
@@ -207,6 +77,11 @@
         <option value="$PROJECT_DIR$/src/test/test.js" />
         <option value="$PROJECT_DIR$/src/js/search/StronglyConnectedComponentSearch.js" />
         <option value="$PROJECT_DIR$/src/test/dead.js" />
+        <option value="$PROJECT_DIR$/test/test.js" />
+        <option value="$PROJECT_DIR$/test/js/test0.js" />
+        <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/test/run-tests.js" />
+        <option value="$PROJECT_DIR$/test/js/graph/test0.js" />
       </list>
     </option>
   </component>
@@ -301,6 +176,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DijkstraJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DijkstraJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DijkstraJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DijkstraJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -327,11 +234,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\DijkstraJS\test" />
+      <recent name="C:\xampp\htdocs\DijkstraJS" />
+      <recent name="C:\xampp\htdocs\DijkstraJS\test\js\graph" />
       <recent name="C:\xampp\htdocs\DijkstraJS\demo\sat" />
       <recent name="C:\xampp\htdocs\DijkstraJS\demo\airtravel" />
-      <recent name="C:\xampp\htdocs\DijkstraJS" />
-      <recent name="C:\xampp\htdocs\DijkstraJS\src" />
-      <recent name="C:\xampp\htdocs\DijkstraJS\src\test" />
     </key>
   </component>
   <component name="RunManager">
@@ -373,14 +280,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15314835" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15314835" sideWeight="0.67045456" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -447,27 +354,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/graph/AdjacencyMatrix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="623" selection-end="623" vertical-scroll-proportion="0.57247436">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/graph/GraphNode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/search/BreadthFirstSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="17" selection-start="1554" selection-end="1554" vertical-scroll-proportion="1.3440703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/search/ShortestPath.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.02489019">
@@ -555,6 +441,27 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="15" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/run-tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/js/graph/test0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="309" selection-end="309" vertical-scroll-proportion="0.3235725">
           <folding />
         </state>
       </provider>
